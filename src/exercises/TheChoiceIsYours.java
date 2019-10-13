@@ -20,19 +20,18 @@ public class TheChoiceIsYours {
 	}
 
 	boolean condenseIfStatement() {
-		if (blackSheep)
-			return true;
-		else
-			return false;
+		return blackSheep;
+		/*
+		 * if (blackSheep) return true; else return false;
+		 */
 	}
 
 	String useTernaryOperator() {
-		String whichToGetWith;
-		if (blackSheep)
-			whichToGetWith = "this";
-		else
-			whichToGetWith = "that";
-		return whichToGetWith;
+		return (blackSheep) ? "this" : "that";
+		/*
+		 * String whichToGetWith; if (blackSheep) whichToGetWith = "this"; else
+		 * whichToGetWith = "that"; return whichToGetWith;
+		 */
 	}
 
 }
